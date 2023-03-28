@@ -44,7 +44,7 @@ const utils = () => {
         // variant with await - recommended to avoid nested '.then'
         try {
             // await: result is returned when available
-            const res = await fetch(COUNTRY_URL + "IN");
+            const res = await fetch(COUNTRY_URL + cc);
             const json = await res.json();
             const data = json[0];
             return data;
